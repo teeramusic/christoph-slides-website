@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="magicscroll.css">
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+    <script src="magicscroll.js"></script>
+    <style media="screen">
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        html {}
+
+        ::-webkit-scrollbar {
+            width: 00px;
+            /* Remove scrollbar space */
+            background: transparent;
+            /* Optional: just make scrollbar invisible */
+        }
+
+        /* Optional: show position indicator in red */
+        ::-webkit-scrollbar-thumb {
+            background: #FF0000;
+        }
+
+        .gallery {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .gallery .img-thumbnail {
+            background-color: #000;
+        }
+
+        .modal-content {
+            background-color: transparent !important;
+        }
+
+        .MagicScroll a {
+            display: none !important;
+        }
+        .MagicScroll[data-mode="cover-flow"]{
+            background-color:#000!important;
+        }
+        .mthumb{
+          transition: all linear 0.1s;
+        }
+        .mthumb:hover{
+          transform:scale(1.02);
+          box-shadow: 0 0 3px #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#">
+                        <h1>TITLE</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page 2 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="padding-0 margin-0 gallery" style="">
+                </div>
+
+            </div>
+            <div class="col-sm">
+                <div class="MagicScroll" data-options="mode:  cover-flow; width: 100%;">
+                    <img src="./slide2/slide001.jpeg"><img src="./slide2/slide002.jpeg"><img src="./slide2/slide003.jpeg"><img src="./slide2/slide004.jpeg"><img src="./slide2/slide005.jpeg"><img src="./slide2/slide006.jpeg"><img
+                      src="./slide2/slide007.jpeg"><img src="./slide2/slide008.jpeg"><img src="./slide2/slide009.jpeg"><img src="./slide2/slide010.jpeg"><img src="./slide2/slide011.jpeg"><img src="./slide2/slide012.jpeg"><img
+                      src="./slide2/slide013.jpeg"><img src="./slide2/slide014.jpeg"><img src="./slide2/slide015.jpeg"><img src="./slide2/slide016.jpeg"><img src="./slide2/slide017.jpeg"><img src="./slide2/slide018.jpeg"><img
+                      src="./slide2/slide019.jpeg"><img src="./slide2/slide020.jpeg"><img src="./slide2/slide021.jpeg"><img src="./slide2/slide022.jpeg"><img src="./slide2/slide023.jpeg"><img src="./slide2/slide024.jpeg"><img
+                      src="./slide2/slide025.jpeg"><img src="./slide2/slide026.jpeg"><img src="./slide2/slide027.jpeg"><img src="./slide2/slide028.jpeg"><img src="./slide2/slide029.jpeg"><img src="./slide2/slide030.jpeg"><img
+                      src="./slide2/slide031.jpeg"><img src="./slide2/slide032.jpeg"><img src="./slide2/slide033.jpeg"><img src="./slide2/slide034.jpeg"><img src="./slide2/slide035.jpeg"><img src="./slide2/slide036.jpeg"><img
+                      src="./slide2/slide037.jpeg"><img src="./slide2/slide038.jpeg"><img src="./slide2/slide039.jpeg"><img src="./slide2/slide040.jpeg"><img src="./slide2/slide041.jpeg"><img src="./slide2/slide042.jpeg"><img
+                      src="./slide2/slide043.jpeg"><img src="./slide2/slide044.jpeg"><img src="./slide2/slide045.jpeg"><img src="./slide2/slide046.jpeg"><img src="./slide2/slide047.jpeg"><img src="./slide2/slide048.jpeg"><img
+                      src="./slide2/slide049.jpeg"><img src="./slide2/slide050.jpeg"><img src="./slide2/slide051.jpeg"><img src="./slide2/slide052.jpeg"><img src="./slide2/slide053.jpeg"><img src="./slide2/slide054.jpeg"><img
+                      src="./slide2/slide055.jpeg"><img src="./slide2/slide056.jpeg"><img src="./slide2/slide057.jpeg"><img src="./slide2/slide058.jpeg"><img src="./slide2/slide059.jpeg"><img src="./slide2/slide060.jpeg"><img
+                      src="./slide2/slide061.jpeg"><img src="./slide2/slide062.jpeg"><img src="./slide2/slide063.jpeg"><img src="./slide2/slide064.jpeg"><img src="./slide2/slide065.jpeg"><img src="./slide2/slide066.jpeg"><img
+                      src="./slide2/slide067.jpeg"><img src="./slide2/slide068.jpeg"><img src="./slide2/slide069.jpeg"><img src="./slide2/slide070.jpeg"><img src="./slide2/slide071.jpeg"><img src="./slide2/slide072.jpeg"><img
+                      src="./slide2/slide073.jpeg"><img src="./slide2/slide074.jpeg"><img src="./slide2/slide075.jpeg"><img src="./slide2/slide076.jpeg"><img src="./slide2/slide077.jpeg"><img src="./slide2/slide078.jpeg"><img
+                      src="./slide2/slide079.jpeg"><img src="./slide2/slide080.jpeg"><img src="./slide2/slide081.jpeg"><img src="./slide2/slide082.jpeg"><img src="./slide2/slide083.jpeg"><img src="./slide2/slide084.jpeg"><img
+                      src="./slide2/slide085.jpeg"><img src="./slide2/slide086.jpeg"><img src="./slide2/slide087.jpeg"><img src="./slide2/slide088.jpeg"><img src="./slide2/slide089.jpeg"><img src="./slide2/slide090.jpeg"><img
+                      src="./slide2/slide091.jpeg"><img src="./slide2/slide092.jpeg"><img src="./slide2/slide093.jpeg"><img src="./slide2/slide094.jpeg"><img src="./slide2/slide095.jpeg"><img src="./slide2/slide096.jpeg"><img
+                      src="./slide2/slide097.jpeg"><img src="./slide2/slide098.jpeg"><img src="./slide2/slide099.jpeg"><img src="./slide2/slide100.jpeg"><img src="./slide2/slide101.jpeg"><img src="./slide2/slide102.jpeg"><img
+                      src="./slide2/slide103.jpeg"><img src="./slide2/slide104.jpeg"><img src="./slide2/slide105.jpeg"><img src="./slide2/slide106.jpeg"><img src="./slide2/slide107.jpeg"><img src="./slide2/slide108.jpeg"><img
+                      src="./slide2/slide109.jpeg"><img src="./slide2/slide110.jpeg"><img src="./slide2/slide111.jpeg"><img src="./slide2/slide112.jpeg"><img src="./slide2/slide113.jpeg"><img src="./slide2/slide114.jpeg"><img
+                      src="./slide2/slide115.jpeg"><img src="./slide2/slide116.jpeg"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm"><small>scroll to view</small></div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+
+        // number string padding
+        function pad(num, size) {
+            var s = "000000000" + num;
+            return s.substr(s.length - size);
+        }
+        //generate gallery
+        var imgPrefix = "./slide2/slide";
+        var thumbPrefix = "./slide2/slide";
+        var suffix = ".jpeg";
+        var padsize = 3;
+        var string = "";
+        var Mstring = "";
+
+
+        for (i = 0; i < 116; i++) {
+            Mstring += '<img src="' + imgPrefix + pad(i + 1, padsize) + suffix + '" />';
+            if (!(i % 3)) {
+                if (i != 0) {
+                    string += "</div>";
+                }
+                string += '<div class="row p-2">';
+            }
+            string += '<div class="col-sm"><img src="'+ thumbPrefix + pad(i + 1, padsize) + suffix +'" class="mthumb img-thumbnail rounded-sm border-0 p-0"  data-index="'+i+'"></div>';
+        }
+
+        $(".gallery").append(string + '</div>');
+
+        var MagicScrollOptions = {};
+        var MagicID = "";
+        MagicScrollOptions = {
+            // autostart: false,
+            step:1,
+            lazyLoad:false,
+            onReady: function() {
+                console.log('onReady', (MagicID = arguments[0]));
+            }
+        };
+        var g;
+        $('.mthumb').click(function(){
+          var idx = this.attributes['data-index'].value;
+          MagicScroll.jump(MagicID, idx);
+        });
+    </script>
+</body>
+
+</html>
