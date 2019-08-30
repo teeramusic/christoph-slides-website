@@ -138,9 +138,12 @@
         }
 
         $(".gallery").append(string + '</div>');
-        $(".container").click(function() {
-            console.log('click');
-            $("video").prop('muted', false)
+		var firsttime = true;
+        $("body").click(function() {
+            if(firsttime){
+				firsttime= false;
+				$("video").prop('muted', false);
+			}
         });
 		$("video").mouseenter(function(){
 			$("video").attr('controls', '');
