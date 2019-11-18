@@ -6,8 +6,8 @@ i {
 }
 
 .right {
-  transform: rotate(-45deg) scale(8);
-  -webkit-transform: rotate(-45deg) scale(8);
+  transform: rotate(-45deg) scale(3);
+  -webkit-transform: rotate(-45deg) scale(3);
 }
 
 .arrow-container {
