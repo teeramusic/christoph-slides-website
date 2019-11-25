@@ -2,168 +2,164 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>aqua plasma</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="magicscroll.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="magicscroll.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+    <style media="screen">
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        html {}
+
+        ::-webkit-scrollbar {
+            width: 00px;
+            /* Remove scrollbar space */
+            background: transparent;
+            /* Optional: just make scrollbar invisible */
+        }
+
+        /* Optional: show position indicator in red */
+        ::-webkit-scrollbar-thumb {
+            background: #FF0000;
+        }
+
+        .gallery {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .gallery .img-thumbnail {
+            background-color: #000;
+        }
+
+        .modal-content {
+            background-color: transparent !important;
+        }
+    </style>
 </head>
 
 <body>
 
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<nav class="navbar navbar-expand-lg navbar-dark">
-					<a class="navbar-brand" href="#">
-						<h1>&nbsp;</h1>
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#">
+                        <h1>&nbsp;</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-						<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-							<li class="nav-item active">
-								<a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link" href="metanoia.html">metanoia</a>
-							</li>
-							<li class="nav-item">
-									<a class="nav-link" href="humankind.html">humankind</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="eros.html">eros logico</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="visuales.html">visuales poeticos</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+                          </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aquaplasma.html">aquaplasma</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="metanoia.html">metanoia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="humankind.html">humankind</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="eros.html">eros logico</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="visuales.html">visuales poeticos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
-			</div>
+            </div>
 
-		</div>
-		<div class="row">
-			<div class="col-sm">
-				<div class="padding-0 margin-0 gallery" style="">
-				</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="padding-0 margin-0 gallery" style="">
+                </div>
 
-			</div>
-			<div class="col-sm">
-				<div class="arrow-container" style="">
-					<p title="Next Image"><a href="#"><i class="arrow right"></i></a></p>
-				</div>
-				<div class="MagicScroll" data-options="mode:  cover-flow; width: 100%;">
-					<img src="./aqua/Slide01.jpeg"><img src="./aqua/Slide02.jpeg"><img src="./aqua/Slide03.jpeg"><img src="./aqua/Slide04.jpeg"><img src="./aqua/Slide05.jpeg"><img src="./aqua/Slide06.jpeg"><img src="./aqua/Slide07.jpeg"><img
-					 src="./aqua/Slide08.jpeg"><img src="./aqua/Slide09.jpeg"><img src="./aqua/Slide10.jpeg"><img src="./aqua/Slide11.jpeg"><img src="./aqua/Slide12.jpeg"><img src="./aqua/Slide13.jpeg"><img src="./aqua/Slide14.jpeg"><img src="./aqua/Slide15.jpeg"><img
-					 src="./aqua/Slide16.jpeg"><img src="./aqua/Slide17.jpeg"><img src="./aqua/Slide18.jpeg"><img src="./aqua/Slide19.jpeg"><img src="./aqua/Slide20.jpeg"><img src="./aqua/Slide21.jpeg"><img src="./aqua/Slide22.jpeg"><img src="./aqua/Slide23.jpeg"><img
-					 src="./aqua/Slide24.jpeg"><img src="./aqua/Slide25.jpeg"><img src="./aqua/Slide26.jpeg"><img src="./aqua/Slide27.jpeg"><img src="./aqua/Slide28.jpeg"><img src="./aqua/Slide29.jpeg"><img src="./aqua/Slide30.jpeg"><img src="./aqua/Slide31.jpeg"><img
-					 src="./aqua/Slide32.jpeg"><img src="./aqua/Slide33.jpeg"><img src="./aqua/Slide34.jpeg"><img src="./aqua/Slide35.jpeg"><img src="./aqua/Slide36.jpeg"><img src="./aqua/Slide37.jpeg"><img src="./aqua/Slide38.jpeg"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm"><small>scroll to view</small></div>
-			<div class="col-sm"><img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/unmute.svg" class="invisible"><img class="sound-button" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mute.svg"></div>
-		</div>
-		<audio loop>
-			<source src="aqua/music.mp3" type="audio/mpeg">
-			Your browser does not support the audio element.
-		</audio>
-	</div>
+            </div>
+            <div class="col-sm">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <video class="embed-responsive-item" loop muted autoplay width="900" height="900" id="vid">
+                        <source src="https://luxurychiangmai.com/christoph_noright.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm"><small>scroll to view</small></div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+        // isPlaying
+        Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+            get: function() {
+                return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+            }
+        })
 
-	<script>
-		// update audio icon states
-		$(function(){
-			var mb = $('.sound-button');
-			var a = $('audio');
-			var aa = a[0];
-			var firsttime = true;
-			mb.click(function(){
-				if(aa.playing){
-					aa.pause();
-					mb.attr('src','https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mute.svg');
-				} else {
-					aa.play();
-					mb.attr('src','https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/unmute.svg');
-
-				}
-			});
-
-			$('body').click(function(){
-				if(firsttime){
-					firsttime = false;
-					mb.click();
-				}
-			});
+        // number string padding
+        function pad(num, size) {
+            var s = "000000000" + num;
+            return s.substr(s.length - size);
+        }
+        //generate gallery
+        var imgPrefix = "./noright/Slide";
+        var thumbPrefix = "./noright/Slide";
+        var suffix = ".jpeg";
+        var padsize = 2;
+        var string = "";
 
 
+        for (i = 0; i < 46; i++) {
+            if (!(i % 3)) {
+                if (i != 0) {
+                    string += "</div>";
+                }
+                string += '<div class="row p-2">';
+            }
+            string += '<div class="col-sm"><a href="' + imgPrefix + pad(i + 1, padsize) + suffix + '" data-toggle="lightbox" data-viewport="{ selector: body, padding: 0 }"><img src="' + thumbPrefix + pad(i + 1, padsize) + suffix +
+                '" class="img-thumbnail rounded-sm border-0 p-0"></a></div>';
+        }
 
-		});
-
-
-		// isPlaying
-		Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-			get: function() {
-				return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+        $(".gallery").append(string + '</div>');
+		var firsttime = true;
+        $("body").click(function() {
+            if(firsttime){
+				firsttime = false;
+				$("video").prop('muted', false);
 			}
-		})
-
-		// number string padding
-		function pad(num, size) {
-			var s = "000000000" + num;
-			return s.substr(s.length - size);
-		}
-		//generate gallery
-		var imgPrefix = "./aqua/Slide";
-		var thumbPrefix = "./aqua/Slide";
-		var suffix = ".jpeg";
-		var padsize = 2;
-		var string = "";
-		var Mstring = "";
-
-
-		for (i = 0; i < 38; i++) {
-			Mstring += '<img src="' + imgPrefix + pad(i + 1, padsize) + suffix + '" />';
-			if (!(i % 3)) {
-				if (i != 0) {
-					string += "</div>";
-				}
-				string += '<div class="row p-2">';
-			}
-			string += '<div class="col-sm"><a herf="#"><img src="' + thumbPrefix + pad(i + 1, padsize) + suffix + '" class="mthumb img-thumbnail rounded-sm border-0 p-0"  data-index="' + i + '"></a></div>';
-		}
-
-		$(".gallery").append(string + '</div>');
-
-		var MagicScrollOptions = {};
-		var MagicID = "";
-		MagicScrollOptions = {
-			// autostart: false,
-			step: 1,
-			lazyLoad: false,
-			onReady: function() {
-				console.log('onReady', (MagicID = arguments[0]));
-			}
-		};
-		var g;
-		$('.mthumb').click(function() {
-			var idx = this.attributes['data-index'].value;
-			MagicScroll.jump(MagicID, idx);
+        });
+		$("video").mouseenter(function(){
+			$("video").attr('controls', '');
+		}).mouseleave(function(){
+			$("video").removeAttr('controls');
 		});
-		$('.arrow-container').click(function(event){
-			event.preventDefault();
-			MagicScroll.forward();
-		});
-	</script>
+    </script>
 </body>
 
 </html>
